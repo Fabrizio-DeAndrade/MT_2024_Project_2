@@ -4,7 +4,7 @@ int switchPin = 1;
 int switchVal = 0;
 int prevSwitchVal = 0;
 
-Servo swingservo;
+Servo swingservo;  //this will be the servo for Spider-Man swinging
 
 void setup() {
   pinMode(switchPin, INPUT);
