@@ -20,7 +20,10 @@ void setup() {
   }
 
   for (int i = 0; i < numServos; i++) {
-    servos[i].write(25);
+    servos[0].write(20); //final servo
+    servos[1].write(0); //figure on right
+    servos[2].write(130); //figure on left
+    servos[3].write(110); //swing servo
   }
 
 }
@@ -43,17 +46,16 @@ void loop() {
 void activateServo(int servoIndex) {
   switch (servoIndex) {
     case 0:
-      servos[0].write(125);
-      
+      servos[0].write(130);
       break;
     case 1:
       servos[1].write(90);
       break;
     case 2:
-      servos[2].write(90);
+      servos[2].write(35);
       break;
     case 3:
-      servos[3].write(180);
+      servos[3].write(85);
       break;
 
     default:
